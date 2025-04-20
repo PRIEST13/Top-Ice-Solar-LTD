@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style-one.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Top ice solar</title>
 </head>
@@ -16,7 +17,7 @@
     <!-- navbar -->
  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
     <div class="container">
-        <a href="index.html"  class="navbar-brand"><img src="img/TOP_ICE_SOLAR_site-icon.png" alt="" width="50"><span style="font-style: italic; font-weight: bold;">Top Ice Solar</span></a>
+        <a href="index.html"  class="navbar-brand"><img class="logo-rotate" src="img/TOP_ICE_SOLAR_site-icon.png" alt="" width="50"><span style="font-style: italic; font-weight: bold;">Top Ice Solar</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -408,8 +409,9 @@
             <div class="col-md-4 mb-3">
                 <h5>Contact Us</h5>
                 <ul class="list-unstyled">
-                    <li><strong>Email:</strong> ice.solarenergy@gmail.com</li>
+                    <li><strong>Email:</strong> topicesolar@gmail.com </li>
                     <li><strong>Phone:</strong> +234 8147725270</li>
+                    <li><strong>Office:</strong> +234 9019719902</li>
                     <li><strong>Address:</strong> I.E.Madubuobi Plaza Opp, Kia motors, Asaba/Benin Express-way, Delta State Nigeria</li>
                     
                 </ul>
@@ -451,6 +453,37 @@
     </div>
 
 </footer>
+
+
+
+
+
+
+<!-- Scroll to Top Button -->
+<a href="#" class="scroll-to-top" id="scrollToTopBtn">
+  <i class='bx bx-up-arrow-alt' ></i> <!-- You can use any icon you prefer -->
+</a>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.classList.add("show");
+      } else {
+          mybutton.classList.remove("show");
+      }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
 
 
 <script src="js/jquery.slim.min.js"></script>

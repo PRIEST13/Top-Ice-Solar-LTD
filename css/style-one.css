@@ -89,6 +89,20 @@ body{
 }
 
 /* About sections */
+
+#aby{
+    /* margin:100px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px hsl(54, 50%, 49%); 
+    
+}
+
+#ceo{
+    border-radius:20px;
+    margin-top:10px;
+}
+
 #abv{
     background-color:rgba(0, 0, 0, 0.078);
 }
@@ -133,3 +147,120 @@ body{
     width: 100%;
     height: 500px;
   }
+
+
+
+
+
+
+
+
+
+  /* Style for Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fae901;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: none; /* Hidden by default */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* .scroll-to-top:hover {
+    background-color: #45a049;
+} */
+
+/* Show button when user scrolls down */
+.show {
+    display: block;
+}
+
+
+
+
+
+
+
+/* Site Sun Logo Animation */
+
+/* Logo animation */
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-rotate{
+   
+    height: auto;
+    animation: rotateLogo 7s linear infinite; /* Adjust duration (5s) for speed */
+}
+
+
+
+
+
+
+
+/* Gallary in severices page */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 200px; /* or whatever height you want */
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  /* .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  } */
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .lightbox {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+  }
+
+
+
+
+  
